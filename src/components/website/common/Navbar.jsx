@@ -32,16 +32,19 @@ const Navbar = () => {
       className={`fixed w-full transition-all duration-[700ms] z-50 ${
         scrolling
           ? 'bg-custom9 bg-opacity-[0.3] backdrop-blur-sm'
-          : 'bg-transparent'
+          : 'bg-white bg-opacity-[0.3] lg:bg-opacity-[1] lg:bg-transparent'
       }`}
     >
       <nav
         className={
-          'sm:container mx-auto h-24 lg:h-28 w-full flex justify-between items-center px-6'
+          'sm:container mx-auto h-16 lg:h-20 w-full flex justify-between items-center px-6'
         }
       >
-        <div className='bg-custom1 rounded-b-3xl h-24 lg:h-28 pr-2 flex items-center'>
-          <img className='' src='/website-assets/nav-logo.svg' alt='...' />
+        <div className='bg-custom1 rounded-b-3xl hidden lg:flex lg:h-20 pr-2  items-center'>
+          <img className='w-40' src='/website-assets/nav-logo.svg' alt='...' />
+        </div>
+        <div className='lg:hidden flex pr-2 items-center'>
+          <img className='h-10' src='/website-assets/nav-logo.svg' alt='...' />
         </div>
         <div className={`hidden lg:block`}>
           <ul className='flex items-center gap-8'>
