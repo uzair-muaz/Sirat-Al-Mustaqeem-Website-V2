@@ -1,34 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.inactive-nav {
-  position: relative;
-  padding-bottom: 9px;
-  font-weight: 400;
-}
-.active-nav {
-  position: relative;
-  padding-bottom: 9px;
-  font-weight: 500;
-}
-
-.active-nav::before {
-  content: '';
-  position: absolute;
-  left: 0px;
-  bottom: -0px;
-  height: 2px;
-  width: 100%;
-  background-color: #046a38;
-}
-
-.inactive-nav::before {
-  content: '';
-  position: absolute;
-  left: 0px;
-  bottom: -0px;
-  height: 2px;
-  width: 100%;
-  background-color: transparent;
-}

@@ -60,7 +60,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className='lg:hidden bg-red-200'>
+        <div className='lg:hidden'>
           <IoIosMenu
             className={`cursor-pointer text-3xl text-white hover:text-custom5 duration-700`}
             onClick={() => {
