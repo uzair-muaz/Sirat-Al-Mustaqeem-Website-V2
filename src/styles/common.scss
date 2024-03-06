@@ -47,3 +47,35 @@
 .custom-react-player iframe {
   border-radius: 12px;
 }
+
+.usp-card {
+  background: transparent;
+  transition: all 700ms ease-in-out;
+  &:hover {
+    background: #489157;
+    opacity: 75%;
+    color: white;
+  }
+}
+
+.relative-container {
+  position: relative;
+  width: 100%;
+}
+
+.green-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 700ms ease;
+  // padding: 40px;
+  background-color: #489157bf;
+  &:hover {
+    opacity: 100%;
+  }
+}
