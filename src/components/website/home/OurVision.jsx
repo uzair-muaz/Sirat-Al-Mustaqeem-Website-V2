@@ -1,5 +1,3 @@
-import React from 'react';
-
 const OurVision = () => {
   return (
     <div className='sm:container sm:mx-auto px-6 py-10 grid md:grid-cols-2 gap-10'>
@@ -20,11 +18,11 @@ const OurVision = () => {
         </p>
         <button className='outlined-yellow-button mt-16'>Read More</button>
       </div>
-      <div className='flex flex-col justify-center'>
+      <div className='flex justify-center items-center'>
         <img
           src='/website-assets/vision-statement.png'
           alt='vision-image'
-          className='w-full'
+          className='w-full max-w-[500px]'
         />
       </div>
     </div>
