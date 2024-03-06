@@ -28,3 +28,18 @@
     background-color: #046a38;
   }
 }
+
+.outlined-yellow-button {
+  transition: all 500ms ease-in-out;
+  border: 1px solid #f2a900;
+  color: #f2a900;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0px 20px;
+  width: fit-content;
+  background-color: transparent;
+  &:hover {
+    background-color: #f2a900;
+    color: white;
+  }
+}
