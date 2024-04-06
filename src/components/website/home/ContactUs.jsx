@@ -12,7 +12,7 @@ const ContactUs = () => {
         </h1>
         <div className="border border-custom6 w-full max-w-[280px] mt-3" />
 
-        <div className="flex w-full gap-10 lg:gap-20 mt-10 md:mt-20 justify-center items-center ">
+        <div className="flex w-full gap-10 lg:gap-20 mt-10 md:mt-16 justify-center items-center ">
           <div className="hidden md:block">
             <img
               src="/website-assets/map.png"

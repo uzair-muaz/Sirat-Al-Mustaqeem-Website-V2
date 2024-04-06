@@ -1,100 +1,105 @@
 .inactive-nav {
-  position: relative;
-  padding-bottom: 9px;
-  font-weight: 400;
+	position: relative;
+	padding-bottom: 9px;
+	font-weight: 400;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -0px;
-    height: 2px;
-    width: 100%;
-    background-color: transparent;
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0px;
+		bottom: -0px;
+		height: 2px;
+		width: 100%;
+		background-color: transparent;
+	}
 }
 .active-nav {
-  position: relative;
-  padding-bottom: 9px;
-  font-weight: 500;
+	position: relative;
+	padding-bottom: 9px;
+	font-weight: 500;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -0px;
-    height: 2px;
-    width: 100%;
-    background-color: #046a38;
-  }
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0px;
+		bottom: -0px;
+		height: 2px;
+		width: 100%;
+		background-color: #046a38;
+	}
 }
 
 .outlined-yellow-button {
-  transition: all 500ms ease-in-out;
-  border: 1px solid #f2a900;
-  color: #f2a900;
-  border-radius: 8px;
-  height: 40px;
-  padding: 0px 20px;
-  width: fit-content;
-  background-color: transparent;
-  &:hover {
-    background-color: #f2a900;
-    color: white;
-  }
+	transition: all 500ms ease-in-out;
+	border: 1px solid #f2a900;
+	color: #f2a900;
+	border-radius: 8px;
+	height: 40px;
+	padding: 0px 20px;
+	width: fit-content;
+	background-color: transparent;
+	&:hover {
+		background-color: #f2a900;
+		color: white;
+	}
 }
 .contained-submit-button {
-  transition: all 500ms ease-in-out;
-  border: 1px solid #69aa8a;
-  background: #69aa8a;
-  color: white;
-  border-radius: 8px;
-  height: 40px;
-  padding: 0px 20px;
-  width: 100%;
-  &:hover {
-    background-color: transparent;
-    color: #69aa8a;
-  }
+	transition: all 500ms ease-in-out;
+	border: 1px solid #69aa8a;
+	background: #69aa8a;
+	color: white;
+	border-radius: 8px;
+	height: 40px;
+	padding: 0px 20px;
+	width: 100%;
+	&:hover {
+		background-color: transparent;
+		color: #69aa8a;
+	}
 }
 
 .custom-react-player iframe {
-  border-radius: 12px;
+	border-radius: 12px;
 }
 
 .usp-card {
-  background: transparent;
-  transition: all 700ms ease-in-out;
-  &:hover {
-    background: #489157;
-    opacity: 75%;
-    color: white;
-  }
+	background: transparent;
+	transition: all 700ms ease-in-out;
+	&:hover {
+		background: #489157;
+		opacity: 75%;
+		color: white;
+	}
 }
 
 .relative-container {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .green-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: all 700ms ease;
-  background-color: #489157bf;
-  border-radius: 24px;
-  &:hover {
-    opacity: 100%;
-  }
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 700ms ease;
+	background-color: #489157bf;
+	border-radius: 24px;
+	&:hover {
+		opacity: 100%;
+	}
 }
 
 input,
 textarea {
-  background-color: #f9ffde !important;
+	background-color: #f9ffde !important;
+}
+
+.ant-modal-content {
+	background: #f9ffde !important;
+	padding: 5px !important;
 }

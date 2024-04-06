@@ -73,7 +73,7 @@ const WhyUs = () => {
               <img
                 src={usp.image}
                 alt={`USP-${index}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-3xl"
               />
               <div className="green-overlay p-5">
                 <h2 className="text-white text-xl sm:text-3xl font-bold">
