@@ -1,15 +1,15 @@
 svg,
 g,
 path {
-  transition: all 700ms ease-in-out;
+	transition: all 700ms ease-in-out;
 }
 
 .footer-socials {
-  &:hover {
-    .animate-icon {
-      transition: all 700ms ease-in-out;
-      border: 1px solid #add99a;
-      transform: rotate(360deg) scale(1.1);
-    }
-  }
+	&:hover {
+		.animate-icon {
+			transition: all 700ms ease-in-out;
+			border: 1px solid #add99a;
+			transform: rotate(360deg) scale(1.1);
+		}
+	}
 }
