@@ -7,7 +7,7 @@ const WordsByPrinciple = () => {
         <img
           src="/website-assets/principal.svg"
           alt="vision-image"
-          className="rounded-full max-w-[500px] object-contain"
+          className="rounded-full lg:max-w-[500px] object-contain"
         />
       </div>
 
