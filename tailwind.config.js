@@ -23,8 +23,10 @@ module.exports = {
         custom5: "#046A38", // Navbar Text Color
         custom6: "#F2A900", //Yellow Color
         custom7: "#393939", // Grey Color Text For Lime Background
+        custom8: "#69AA8A", //Form Submit Button
         // custom8: '#4E4E4ECC',
         // custom9: '#040921C2',
+
         custom9: "#1C2B26", // Footer Background Color
       },
     },

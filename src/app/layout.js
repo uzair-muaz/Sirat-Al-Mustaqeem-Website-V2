@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./main.scss";
-import Footer from "@/components/website/common/Footer";
 import Navbar from "@/components/website/common/Navbar";
+import { ConfigProvider } from "antd";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,12 +12,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const theme = {
+    token: {
+      colorPrimary: "#69AA8A",
+    },
+  };
+
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {children}
-        {/* <Footer /> */}
+        <ConfigProvider theme={theme}>{children}</ConfigProvider>
       </body>
     </html>
   );

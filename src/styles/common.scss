@@ -43,6 +43,20 @@
     color: white;
   }
 }
+.contained-submit-button {
+  transition: all 500ms ease-in-out;
+  border: 1px solid #69aa8a;
+  background: #69aa8a;
+  color: white;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0px 20px;
+  width: 100%;
+  &:hover {
+    background-color: transparent;
+    color: #69aa8a;
+  }
+}
 
 .custom-react-player iframe {
   border-radius: 12px;
@@ -78,4 +92,9 @@
   &:hover {
     opacity: 100%;
   }
+}
+
+input,
+textarea {
+  background-color: #f9ffde !important;
 }
