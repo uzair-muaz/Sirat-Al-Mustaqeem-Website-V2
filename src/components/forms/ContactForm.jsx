@@ -133,7 +133,7 @@ const ContactForm = () => {
 				<button
 					className="contained-submit-button w-full mt-3"
 					type="primary"
-					htmlType="submit"
+					// htmlType="submit"
 				>
 					Submit
 				</button>
