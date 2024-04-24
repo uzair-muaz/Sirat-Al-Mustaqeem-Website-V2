@@ -96,10 +96,22 @@
 
 input,
 textarea {
-	background-color: #f9ffde !important;
+	background-color: #faffd7 !important;
 }
 
 .ant-modal-content {
 	background: #f9ffde !important;
 	padding: 5px !important;
 }
+
+.ant-input {
+	border-color: #489157;
+}
+
+.ant-upload {
+	width: 100%;
+}
+
+// .ant-upload-list-items {
+// 	background-color: #489157bf !important;
+// }

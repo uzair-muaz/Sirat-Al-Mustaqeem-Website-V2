@@ -3,7 +3,7 @@ const MissionStatement = () => {
 		<div className="sm:container sm:mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
 			<div className="flex justify-center items-center">
 				<img
-					src="/website-assets/what-statement.png"
+					src="/website-assets/mission-statement.png"
 					alt="mission-image"
 					className="w-full max-w-[500px]"
 				/>
