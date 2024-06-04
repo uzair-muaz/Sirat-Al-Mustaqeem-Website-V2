@@ -27,6 +27,7 @@ const Sidebar = ({ isOpen, handleCloseSidebar }) => {
 					{navLinks.map(link => (
 						<Link key={link.route} href={link.route} legacyBehavior>
 							<a
+								onClick={handleCloseSidebar}
 								className={`text-sm   ${
 									currentURL === link.route
 										? 'text-custom3'

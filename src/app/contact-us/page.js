@@ -12,7 +12,7 @@ export default function ContactUs() {
 
 			<div className="bg-gradient-to-b from-custom1 from-10% via-[#E6FFE1] via-30% to-[#E6FFE1] to-90%  w-full">
 				<div className="py-10 w-full">
-					<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center">
+					<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center w-full">
 						<WhereToFindUs />
 						<ContactFormSection />
 					</div>

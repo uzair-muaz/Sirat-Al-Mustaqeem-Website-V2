@@ -12,7 +12,7 @@ const AdmissionForm = () => {
 
 	return (
 		<Form onFinish={onFinish} className="space-y-3 w-full">
-			<div className="grid md:grid-cols-2 gap-10">
+			<div className="grid md:grid-cols-2 gap-3 md:gap-10">
 				<div className="space-y-1">
 					<p className="text-custom8">Student Name</p>
 					<Item
@@ -44,7 +44,7 @@ const AdmissionForm = () => {
 				</div>
 			</div>
 
-			<div className="grid md:grid-cols-2 gap-10">
+			<div className="grid md:grid-cols-2 gap-3 md:gap-10">
 				<div className="space-y-1">
 					<p className="text-custom8">Age</p>
 					<Item
@@ -59,6 +59,7 @@ const AdmissionForm = () => {
 						<Input placeholder="Age" size="large" />
 					</Item>
 				</div>
+
 				<div className="space-y-1">
 					<p className="text-custom8">Gender</p>
 					<Item

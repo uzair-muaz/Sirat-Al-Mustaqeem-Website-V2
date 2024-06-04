@@ -107,7 +107,7 @@ const CareerForm = () => {
 					<Upload {...uploadProps}>
 						<div
 							style={{ border: '1.5px dashed #13824B' }}
-							className="flex flex-col gap-2 items-center justify-center bg-[#FAFFD7] h-[120px] rounded-lg"
+							className="flex flex-col gap-2 items-center justify-center bg-[#FAFFD7] h-[120px] rounded-lg px-4 text-center"
 						>
 							<GrCloudUpload className="text-2xl" />
 							<h1>
