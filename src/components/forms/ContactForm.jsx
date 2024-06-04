@@ -17,7 +17,7 @@ const ContactForm = () => {
 			//     remember: true,
 			//   }}
 			onFinish={onFinish}
-			className="space-y-3 w-full"
+			className="space-y-3 w-full mt-9"
 		>
 			<div className="grid md:grid-cols-2 gap-10">
 				<div className="space-y-1">
