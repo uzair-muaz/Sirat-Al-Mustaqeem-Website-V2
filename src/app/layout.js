@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 
 import { ConfigProvider } from 'antd';
 
+import { FloatingButtons } from '@/components/website/common/FloatingButtons';
 import Navbar from '@/components/website/common/Navbar';
 
 import './globals.css';
@@ -25,7 +26,10 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={inter.className}>
 				<Navbar />
-				<ConfigProvider theme={theme}>{children}</ConfigProvider>
+				<div className="relative">
+					<FloatingButtons />
+					<ConfigProvider theme={theme}>{children}</ConfigProvider>
+				</div>
 			</body>
 		</html>
 	);
