@@ -3,14 +3,17 @@ import { USPsArray } from '@/utils/website/constants';
 const WhyUs = () => {
 	return (
 		<div className="py-10 w-full">
-			<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center">
+			<div
+				data-aos="fade-up"
+				className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center"
+			>
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">USP's</h3>
 				<h1 className="text-custom2 text-4xl sm:text-5xl font-bold mt-3 text-center">
 					WHY US
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 
-				<div className="hidden lg:flex gap-5 w-full mt-16">
+				<div data-aos="zoom-out" className="hidden lg:flex gap-5 w-full mt-16">
 					<div className="w-full space-y-4">
 						{USPsArray.slice(0, 2).map((usp, index) => (
 							<div className="relative-container" key={`usp-card-${index}`}>
@@ -67,7 +70,10 @@ const WhyUs = () => {
 					</div>
 				</div>
 
-				<div className="lg:hidden grid md:grid-cols-2 gap-5 mt-16">
+				<div
+					data-aos="zoom-out"
+					className="lg:hidden grid md:grid-cols-2 gap-5 mt-16"
+				>
 					{USPsArray.map((usp, index) => (
 						<div className="relative-container" key={`usp-card-${index}`}>
 							<img

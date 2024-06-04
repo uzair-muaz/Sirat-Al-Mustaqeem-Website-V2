@@ -1,14 +1,14 @@
 const MissionStatement = () => {
 	return (
 		<div className="sm:container sm:mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
-			<div className="flex justify-center items-center">
+			<div data-aos="fade-right" className="flex justify-center items-center">
 				<img
 					src="/website-assets/mission-statement.png"
 					alt="mission-image"
 					className="w-full max-w-[500px]"
 				/>
 			</div>
-			<div className="flex flex-col justify-center">
+			<div data-aos="fade-left" className="flex flex-col justify-center">
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">
 					About Us
 				</h3>

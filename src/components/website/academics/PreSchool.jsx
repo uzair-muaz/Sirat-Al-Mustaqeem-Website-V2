@@ -1,7 +1,7 @@
 const PreSchool = () => {
 	return (
 		<div className="sm:container sm:mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
-			<div className="flex flex-col justify-center">
+			<div data-aos="fade-right" className="flex flex-col justify-center">
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">
 					Our Academics
 				</h3>
@@ -20,7 +20,7 @@ const PreSchool = () => {
 					explore and express themselves freely.
 				</p>
 			</div>
-			<div className="flex justify-center items-center">
+			<div data-aos="fade-left" className="flex justify-center items-center">
 				<img
 					src="/website-assets/pre-school.png"
 					alt="pre-school-image"

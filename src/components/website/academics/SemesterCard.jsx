@@ -8,7 +8,10 @@ export function SemesterCard({
 	endDate
 }) {
 	return (
-		<div className="bg-white grid sm:grid-cols-2 gap-0 rounded-3xl w-full ">
+		<div
+			data-aos="fade-up"
+			className="bg-white grid sm:grid-cols-2 gap-0 rounded-3xl w-full "
+		>
 			<div className="flex flex-col justify-start p-6">
 				<h1 className="text-custom3 text-3xl font-bold">{title}</h1>
 				<p className="text-custom7 mt-4">{description}</p>

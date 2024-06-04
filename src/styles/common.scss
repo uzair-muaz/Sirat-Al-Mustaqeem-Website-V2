@@ -151,6 +151,10 @@ textarea {
 
 .icon:hover {
 	border-color: currentColor;
+	transform: rotate(360deg);
+	transition:
+		border-color 0.3s ease,
+		transform 0.7s ease;
 }
 
 .facebook {

@@ -74,14 +74,22 @@ const Hero = () => {
 						>
 							<div className="bg-gradient-to-r from-custom2 via-transparent h-full">
 								<div className="sm:container sm:mx-auto flex flex-col justify-center px-6 gap-8 text-white h-full pt-20 pb-7">
-									<h1 className="text-3xl md:text-5xl md:leading-snug capitalize font-bold">
+									<h1
+										data-aos="fade-down"
+										className="text-3xl md:text-5xl md:leading-snug capitalize font-bold"
+									>
 										Welcome to <br /> sirat al <br /> mustaqeem
 									</h1>
-									<p>We offer the best education experience in the triad.</p>
-									<button className="capitalize border border-custom6 rounded-lg w-fit h-10 px-4">
+									<p data-aos="fade-down">
+										We offer the best education experience in the triad.
+									</p>
+									<button
+										data-aos="fade-up"
+										className="capitalize border border-custom6 rounded-lg w-fit h-10 px-4"
+									>
 										learn more
 									</button>
-									<div className="flex gap-4">
+									<div data-aos="fade-up" className="flex gap-4">
 										<button className={buttonStyle} onClick={handlePrev}>
 											<BsArrowLeft />
 										</button>

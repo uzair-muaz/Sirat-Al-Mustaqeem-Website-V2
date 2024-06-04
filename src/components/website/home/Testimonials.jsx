@@ -34,7 +34,10 @@ const Testimonials = () => {
 
 	return (
 		<div className="py-10 w-full">
-			<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center">
+			<div
+				data-aos="fade-down"
+				className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center"
+			>
 				<h3 className="text-custom4 text-lg sm:text-xl font-medium">
 					Testimonials
 				</h3>
@@ -78,7 +81,7 @@ const Testimonials = () => {
 										</button>
 									</div>
 								</div>
-								<div>
+								<div data-aos="fade-left">
 									<h2 className="text-white text-xl sm:text-3xl font-bold mt-3">
 										{item.parentName}
 									</h2>

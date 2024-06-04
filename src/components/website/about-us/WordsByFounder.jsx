@@ -1,7 +1,7 @@
 const WordsByFounder = () => {
 	return (
 		<div className="sm:container sm:mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
-			<div className="flex justify-center items-center ">
+			<div data-aos="fade-right" className="flex justify-center items-center ">
 				<img
 					src="/website-assets/principal.svg"
 					alt="vision-image"
@@ -9,7 +9,7 @@ const WordsByFounder = () => {
 				/>
 			</div>
 
-			<div className="flex flex-col justify-center">
+			<div data-aos="fade-left" className="flex flex-col justify-center">
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">Founder</h3>
 				<h1 className="text-custom2 text-4xl sm:text-5xl font-bold mt-3">
 					Words Of The Founder

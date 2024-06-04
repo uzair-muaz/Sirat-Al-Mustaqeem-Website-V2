@@ -12,7 +12,10 @@ const Hero = ({ title }) => {
 				}}
 			>
 				<div className="bg-gradient-to-t from-custom2 via-[#00000033] to-[#00000033] h-full">
-					<div className="sm:container sm:mx-auto flex flex-col items-center justify-center px-6 gap-8 text-white h-full pt-20 pb-7">
+					<div
+						data-aos="fade-up"
+						className="sm:container sm:mx-auto flex flex-col items-center justify-center px-6 gap-8 text-white h-full pt-20 pb-7"
+					>
 						<h1 className="text-3xl md:text-5xl md:leading-snug capitalize font-bold">
 							{title}
 						</h1>

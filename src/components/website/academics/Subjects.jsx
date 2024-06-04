@@ -45,7 +45,7 @@ const Subjects = () => {
 	return (
 		<div className="sm:container sm:mx-auto px-6 py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 			{subjects.map((subject, index) => (
-				<SubjectCard key={`subject-card-${index}`} {...subject} />
+				<SubjectCard key={`subject-card-${index}`} index={index} {...subject} />
 			))}
 		</div>
 	);

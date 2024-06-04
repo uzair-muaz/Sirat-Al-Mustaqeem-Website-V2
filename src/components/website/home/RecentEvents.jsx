@@ -68,7 +68,7 @@ const RecentEvents = () => {
 		'text-[#fbbf11] text-lg rounded-full p-2 cursor-pointer border border-[#fbbf11] hover:text-black hover:bg-[#fbbf11] transition-all duration-700';
 
 	return (
-		<div className="py-10 w-full">
+		<div data-aos="fade-down" className="py-10 w-full">
 			<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center">
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">
 					Pictures

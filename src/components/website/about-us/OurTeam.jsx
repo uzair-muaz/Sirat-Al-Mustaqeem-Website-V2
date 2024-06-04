@@ -10,16 +10,22 @@ const OurTeam = () => {
 		'faculty-6.png'
 	];
 	return (
-		<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center py-16 w-full">
-			<h3 className="text-custom4 text-lg sm:text-xl font-medium">Teachers</h3>
-			<h1 className="text-custom2 text-4xl sm:text-5xl font-bold mt-3 text-center">
-				Our Team
-			</h1>
-			<div className="border border-custom6 w-full max-w-[280px] mt-3" />
-
+		<div className="sm:container sm:mx-auto px-6  py-16 w-full">
+			<div
+				data-aos="fade-down"
+				className="flex flex-col justify-center items-center"
+			>
+				<h3 className="text-custom4 text-lg sm:text-xl font-medium">
+					Teachers
+				</h3>
+				<h1 className="text-custom2 text-4xl sm:text-5xl font-bold mt-3 text-center">
+					Our Team
+				</h1>
+				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
+			</div>
 			<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-20">
-				{facultyArray.map(faculty => (
-					<ImageCard key={faculty} picture={faculty} />
+				{facultyArray.map((faculty, index) => (
+					<ImageCard key={faculty} index={index} picture={faculty} />
 				))}
 			</div>
 		</div>
@@ -28,9 +34,13 @@ const OurTeam = () => {
 
 export default OurTeam;
 
-function ImageCard({ picture }) {
+function ImageCard({ picture, index }) {
 	return (
-		<div className="relative bg-[#13824b33] rounded-[30px] w-full max-h-[464px]">
+		<div
+			data-aos="fade-right"
+			data-aos-delay={(index + 2) * 150}
+			className="relative bg-[#13824b33] rounded-[30px] w-full max-h-[464px]"
+		>
 			<img
 				// src={`/website-assets/${picture}`}
 				src={`/website-assets/team-picture-background.png`}

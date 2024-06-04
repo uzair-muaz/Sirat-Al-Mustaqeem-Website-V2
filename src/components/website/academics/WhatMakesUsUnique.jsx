@@ -1,14 +1,14 @@
 const WhatMakesUsUnique = () => {
 	return (
 		<div className="sm:container sm:mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
-			<div className="flex justify-center items-center">
+			<div data-aos="fade-down" className="flex justify-center items-center">
 				<img
 					src="/website-assets/what-makes-us-unique.png"
 					alt="mission-image"
 					className="w-full max-w-[500px]"
 				/>
 			</div>
-			<div className="flex flex-col justify-start">
+			<div data-aos="fade-up" className="flex flex-col justify-start">
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">
 					Our offerings
 				</h3>

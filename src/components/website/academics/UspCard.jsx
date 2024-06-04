@@ -3,6 +3,7 @@ const UspCard = ({ icon, title, description, index }) => {
 	return (
 		<>
 			<div
+				data-aos="fade-left"
 				className={`hidden md:block w-full p-5`}
 				style={{
 					borderRight: borderPrint && '1px solid #e5e7eb'
@@ -24,7 +25,10 @@ const UspCard = ({ icon, title, description, index }) => {
 					borderTop: index === 1 && '1px solid #e5e7eb'
 				}}
 			>
-				<div className="flex flex-col gap-5 items-center text-center">
+				<div
+					data-aos="fade-left"
+					className="flex flex-col gap-5 items-center text-center"
+				>
 					<img src={icon} alt="icon-image" className="w-[50px] h-[50px]" />
 					<h1 className="text-[#013630] text-lg font-medium capitalize">
 						{title}

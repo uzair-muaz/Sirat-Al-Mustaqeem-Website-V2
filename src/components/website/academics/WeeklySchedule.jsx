@@ -9,7 +9,7 @@ const WeeklySchedule = () => {
 			<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 
 			<div className="grid sm:grid-cols-2 md:grid-cols-5 gap-10 w-full mt-10 sm:mt-16">
-				<div className="w-full flex flex-col gap-3">
+				<div data-aos="fade-down" className="w-full flex flex-col gap-3">
 					<CalendarHeader text="MONDAY" />
 					<CalendarBody text="Circle Time" />
 					<CalendarBody text="Physical Activities" />
@@ -17,7 +17,11 @@ const WeeklySchedule = () => {
 					<CalendarBody text="Mathematics" />
 					<CalendarBody text="-" />
 				</div>
-				<div className="w-full flex flex-col gap-3">
+				<div
+					data-aos="fade-down"
+					data-aos-delay={300}
+					className="w-full flex flex-col gap-3"
+				>
 					<CalendarHeader text="TUESDAY" />
 					<CalendarBody text="Circle Time" />
 					<CalendarBody text="Physical Activities" />
@@ -25,7 +29,11 @@ const WeeklySchedule = () => {
 					<CalendarBody text="Mathematics" />
 					<CalendarBody text="-" />
 				</div>
-				<div className="w-full flex flex-col gap-3">
+				<div
+					data-aos="fade-down"
+					data-aos-delay={600}
+					className="w-full flex flex-col gap-3"
+				>
 					<CalendarHeader text="WEDNESDAY" />
 					<CalendarBody text="Circle Time" />
 					<CalendarBody text="Physical Activities" />
@@ -33,7 +41,11 @@ const WeeklySchedule = () => {
 					<CalendarBody text="Free Play" />
 					<CalendarBody text="Activity Based Learning" />
 				</div>
-				<div className="w-full flex flex-col gap-3">
+				<div
+					data-aos="fade-down"
+					data-aos-delay={900}
+					className="w-full flex flex-col gap-3"
+				>
 					<CalendarHeader text="THURSDAY" />
 					<CalendarBody text="Circle Time" />
 					<CalendarBody text="Physical Activities" />
@@ -41,7 +53,11 @@ const WeeklySchedule = () => {
 					<CalendarBody text="Mathematics" />
 					<CalendarBody text="-" />
 				</div>
-				<div className="w-full flex flex-col gap-3">
+				<div
+					data-aos="fade-down"
+					data-aos-delay={1200}
+					className="w-full flex flex-col gap-3"
+				>
 					<CalendarHeader text="FRIDAY" />
 					<CalendarBody text="Circle Time" />
 					<CalendarBody text="Physical Activities" />
