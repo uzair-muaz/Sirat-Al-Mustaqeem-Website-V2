@@ -2,19 +2,19 @@ import { SemesterCard } from './SemesterCard';
 
 const semesters = [
 	{
+		title: 'Spring Semester',
+		description: 'The spring semester usually spans from January to May.',
+		startDate: '8th January 2024',
+		endDate: '7th June 2024',
+		picture: '/website-assets/semester-2.png'
+	},
+	{
 		title: 'Fall Semester',
 		description:
 			'The fall semester typically covers the period from September to December.',
 		startDate: '4th September 2023',
-		endDate: '4th September 2023',
+		endDate: '6th January 2023',
 		picture: '/website-assets/semester-1.png'
-	},
-	{
-		title: 'Spring Semester',
-		description: 'The spring semester usually spans from January to May.',
-		startDate: '4th September 2023',
-		endDate: '4th September 2023',
-		picture: '/website-assets/semester-2.png'
 	}
 ];
 const AcademicCalendar = () => {

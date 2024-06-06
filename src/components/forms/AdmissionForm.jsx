@@ -137,10 +137,12 @@ const AdmissionForm = () => {
 						className="custom-select"
 						dropdownStyle={{ backgroundColor: '#f1f5da' }}
 					>
-						<Option value="grade1">Grade 1</Option>
-						<Option value="grade2">Grade 2</Option>
-						<Option value="grade3">Grade 3</Option>
-						{/* Add more options as needed */}
+						<Option value="FY-1">FY-1</Option>
+						<Option value="FY-2">FY-2</Option>
+						<Option value="FY-3">FY-3</Option>
+						<Option value="Level 1">Level 1</Option>
+						<Option value="Level 2">Level 2</Option>
+						<Option value="Level 3">Level 3</Option>
 					</Select>
 				</Item>
 			</div>

@@ -3,7 +3,7 @@ const SubjectCard = ({ name, description, index }) => {
 		<>
 			<div
 				data-aos="fade-right"
-				data-aos-delay={(index + 1) * 150}
+				data-aos-delay={(index + 1) * 100}
 				className={`w-full px-5 py-6 border-2 border-[#D2E18F] rounded-xl`}
 			>
 				<h1 className="text-[#013630] text-2xl font-semibold capitalize">

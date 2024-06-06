@@ -8,14 +8,21 @@ const WorkWithUs = () => {
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 				<p className="text-custom7 mt-7">
-					At Al-Fajr Preschool, our goals revolve around holistic education and
-					unlocking the potential of every student. This development takes care
-					of their Cognitive, Spiritual, Social-Emotional and Physical.)  We
-					strive to create a learning environment that nurtures intellectual
-					curiosity, promotes critical thinking, and fosters academic
-					excellence. Embracing the unique individuality of each student, we
-					encourage their creativity and inquisitiveness, allowing them to
-					explore and express themselves freely.
+					At Sirat al Mustaqeem, we love to onboard individuals who are
+					passionate about education and have a knack to challenge the
+					traditional and conventional systems. Individuals who are committed
+					and persistent to find solutions to big problems in society and
+					education and hence make a noteworthy difference. We seek individuals
+					who are innovative in their approach, ready to learn and implement new
+					methodologies, and having a heart that has love and care for the young
+					learners. If you consider yourself such a creative individual, then
+					you are at the right place. Avail this opportunity to team up with the
+					change makers by filling out the application form.
+				</p>
+				<p className="mt-2">
+					We believe in giving financial freedom to our educators so that they
+					can focus on the development of the children. Easing our educators is
+					our prime focus and we believe in doing that in best possible ways.
 				</p>
 			</div>
 			<div data-aos="fade-left" className="flex justify-center items-center">

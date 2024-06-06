@@ -65,7 +65,7 @@ const Hero = () => {
 				{ImagesData.map((item, index) => (
 					<SwiperSlide key={`hero-${index}`}>
 						<div
-							className="w-full md:h-[875px] bg-gradient-to-r from-custom2 to-transparent relative"
+							className="w-full md:h-[875px] lg:h-screen bg-gradient-to-r from-custom2 to-transparent relative"
 							style={{
 								background: `url(${item})`,
 								backgroundRepeat: 'no-repeat',

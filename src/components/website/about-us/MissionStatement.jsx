@@ -17,11 +17,12 @@ const MissionStatement = () => {
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 				<p className="text-custom7 mt-7">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq. sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq. sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq..
+					To build a friendly environment for children to learn, play,
+					socialize, and acquire knowledge that will help them understand how to
+					live life the right way. We strive to support this environment by
+					building a comprehensive system that will address a range of learning
+					styles and offer diverse courses and programs so that students grow
+					holistically and are prepared to take on the endeavors of life.
 				</p>
 			</div>
 		</div>

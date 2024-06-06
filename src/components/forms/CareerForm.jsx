@@ -94,6 +94,51 @@ const CareerForm = () => {
 			</div>
 
 			<div className="space-y-1">
+				<p className="text-custom8">Education</p>
+				<Item
+					name="education"
+					rules={[
+						{
+							required: true,
+							message: 'Please input your education!'
+						}
+					]}
+				>
+					<Input placeholder="Education" />
+				</Item>
+			</div>
+
+			<div className="space-y-1">
+				<p className="text-custom8">Why do you want to join?</p>
+				<Item
+					name="whyJoin"
+					rules={[
+						{
+							required: true,
+							message: 'Please input why you want to join!'
+						}
+					]}
+				>
+					<Input.TextArea placeholder="Why do you want to join?" />
+				</Item>
+			</div>
+
+			<div className="space-y-1">
+				<p className="text-custom8">Experience</p>
+				<Item
+					name="experience"
+					rules={[
+						{
+							required: true,
+							message: 'Please input your experience!'
+						}
+					]}
+				>
+					<Input.TextArea placeholder="Experience" />
+				</Item>
+			</div>
+
+			<div className="space-y-1">
 				<p className="text-custom8">Upload Resume</p>
 				<Item
 					name="resume"
@@ -111,7 +156,8 @@ const CareerForm = () => {
 						>
 							<GrCloudUpload className="text-2xl" />
 							<h1>
-								Browse and chose the files you want to upload from your computer
+								Browse and choose the files you want to upload from your
+								computer
 							</h1>
 						</div>
 					</Upload>

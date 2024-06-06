@@ -27,7 +27,7 @@ const WhereToFindUs = () => {
 				>
 					<FaLocationDot className="text-5xl text-[#B2B2B2]" />
 					<h1 className="font-semibold text-2xl mt-5">Our Location</h1>
-					<p>Long Street 454 Los Angles</p>
+					<p>Free Quran Education Centre Rawalpindi</p>
 				</div>
 				<div
 					data-aos="fade-right"
@@ -45,7 +45,8 @@ const WhereToFindUs = () => {
 				>
 					<FaPhoneSquareAlt className="text-5xl text-[#B2B2B2]" />
 					<h1 className="font-semibold text-2xl mt-5">Our Phone</h1>
-					<p>Long Street 454 Los Angles</p>
+					<p>0333-1100786 ---- 0302-5019924</p>
+					<p></p>
 				</div>
 			</div>
 		</div>

@@ -6,7 +6,7 @@ export const eventsArray = [
 
 		thumbnailImage: '/website-assets/events/gardening-1.jpg',
 		modalImages: [
-			'/website-assets/events/gardening-1.jpg',
+			'https://u.pcloud.link/publink/show?code=VZzGg00ZbSdSw1wYAOhr76gifWAxIHmdC8TV#folder=19836622232&tpl=publicfoldergrid',
 			'/website-assets/events/gardening-2.jpg',
 			'/website-assets/events/gardening-3.jpg'
 		]

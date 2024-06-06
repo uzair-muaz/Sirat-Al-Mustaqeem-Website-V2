@@ -12,12 +12,15 @@ const PreSchool = () => {
 				<p className="text-custom7 mt-7">
 					At Al-Fajr Preschool, our goals revolve around holistic education and
 					unlocking the potential of every student. This development takes care
-					of their Cognitive, Spiritual, Social-Emotional and Physical.)  We
+					of their Cognitive, Spiritual, Social-Emotional and Physical.) We
 					strive to create a learning environment that nurtures intellectual
 					curiosity, promotes critical thinking, and fosters academic
 					excellence. Embracing the unique individuality of each student, we
 					encourage their creativity and inquisitiveness, allowing them to
-					explore and express themselves freely.
+					explore and express themselves freely. Our focus on individuality
+					fosters a sense of belonging and empowers students to develop their
+					own voices. Following is a breakdown of attributes that the institute
+					considers the most integral ones to be imparted to students:
 				</p>
 			</div>
 			<div data-aos="fade-left" className="flex justify-center items-center">

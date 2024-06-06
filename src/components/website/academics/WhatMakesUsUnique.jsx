@@ -17,14 +17,10 @@ const WhatMakesUsUnique = () => {
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 				<p className="text-custom7 mt-7">
-					At Al-Fajr Preschool, our goals revolve around holistic education and
-					unlocking the potential of every student. This development takes care
-					of their Cognitive, Spiritual, Social-Emotional and Physical.)  We
-					strive to create a learning environment that nurtures intellectual
-					curiosity, promotes critical thinking, and fosters academic
-					excellence. Embracing the unique individuality of each student, we
-					encourage their creativity and inquisitiveness, allowing them to
-					explore and express themselves freely.
+					Our Preschool will provide various opportunities for students to
+					develop the desired characteristics along with an environment that
+					helps them self-express and be their true selves. Here are the key
+					offerings that make our preschool a unique learning environment:
 				</p>
 			</div>
 		</div>
