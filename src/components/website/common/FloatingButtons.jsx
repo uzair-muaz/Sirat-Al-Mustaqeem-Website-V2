@@ -18,28 +18,51 @@ export const FloatingButtons = () => {
 		setIsCollapsed(!isCollapsed);
 	};
 
+	const handleRedirect = value => {
+		if (value === 'whatsapp') {
+			window.open(`https://wa.me/${'923102222330'}`, '_blank');
+		} else if (value === 'facebook') {
+			window.open('https://www.facebook.com/', '_blank');
+		} else if (value === 'instagram') {
+			window.open('https://www.instagram.com/', '_blank');
+		} else if (value === 'youtube') {
+			window.open('https://www.youtube.com/', '_blank');
+		}
+	};
 	return (
 		<div>
 			<ul
 				className={`fixed  bottom-16 right-4 md:bottom-10 md:right-8 space-y-2 z-50 ${isCollapsed ? 'collapsed' : 'expanded'}`}
 			>
 				<li className="icon-container footer-socials facebook">
-					<span className="icon facebook">
+					<span
+						className="icon facebook"
+						onClick={() => handleRedirect('facebook')}
+					>
 						<FaFacebookF />
 					</span>
 				</li>
 				<li className="icon-container footer-socials instagram">
-					<span className="icon instagram">
+					<span
+						className="icon instagram"
+						onClick={() => handleRedirect('instagram')}
+					>
 						<FaInstagram />
 					</span>
 				</li>
 				<li className="icon-container footer-socials youtube">
-					<span className="icon youtube">
+					<span
+						className="icon youtube"
+						onClick={() => handleRedirect('youtube')}
+					>
 						<FaYoutube />
 					</span>
 				</li>
 				<li className="icon-container footer-socials whatsapp">
-					<span className="icon whatsapp">
+					<span
+						className="icon whatsapp"
+						onClick={() => handleRedirect('whatsapp')}
+					>
 						<FaWhatsapp />
 					</span>
 				</li>

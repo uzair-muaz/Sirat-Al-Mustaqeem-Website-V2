@@ -1,13 +1,17 @@
+import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 
 import { ConfigProvider } from 'antd';
 
 import { AOSInit } from '@/components/website/common/AOSInit';
 import { FloatingButtons } from '@/components/website/common/FloatingButtons';
-import Navbar from '@/components/website/common/Navbar';
 
 import './globals.css';
 import './main.scss';
+
+const Navbar = dynamic(() => {
+	return import('../components/website/common/Navbar');
+});
 
 const inter = Inter({ subsets: ['latin'] });
 

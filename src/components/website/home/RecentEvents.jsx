@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { Modal } from 'antd';
 import { BsArrowLeft } from 'react-icons/bs';
@@ -20,14 +20,20 @@ const RecentEvents = () => {
 	const [openModal, setOpenModal] = useState(false);
 	const [modalImages, setModalImages] = useState([]);
 	const [currentIndex, setCurrentIndex] = useState(0);
+	const [screenWidth, setScreenWidth] = useState(1024);
+
 	const itemsPerPage = {
 		sm: 1,
 		md: 2,
 		lg: 3
 	};
 
+	useEffect(() => {
+		const calScreenWidth = window.innerWidth;
+		setScreenWidth(calScreenWidth);
+	}, []);
+
 	const getScreenSize = () => {
-		const screenWidth = window.innerWidth;
 		if (screenWidth >= 1024) return 'lg'; // large
 		if (screenWidth >= 768) return 'md'; // medium
 		return 'sm'; // small
@@ -68,7 +74,7 @@ const RecentEvents = () => {
 		'text-[#fbbf11] text-lg rounded-full p-2 cursor-pointer border border-[#fbbf11] hover:text-black hover:bg-[#fbbf11] transition-all duration-700';
 
 	return (
-		<div data-aos="fade-down" className="py-10 w-full">
+		<div data-aos="fade-right" className="py-10 w-full">
 			<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center">
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">
 					Pictures
