@@ -20,13 +20,17 @@ export const FloatingButtons = () => {
 
 	const handleRedirect = value => {
 		if (value === 'whatsapp') {
-			window.open(`https://wa.me/${'923102222330'}`, '_blank');
+			window.open(`https://wa.me/${'923331100786'}`, '_blank');
 		} else if (value === 'facebook') {
-			window.open('https://www.facebook.com/', '_blank');
+			window.open(
+				' https://www.facebook.com/SiratalMustaqeemAcademy?mibextid=ZbWKwL',
+				'_blank'
+			);
 		} else if (value === 'instagram') {
-			window.open('https://www.instagram.com/', '_blank');
-		} else if (value === 'youtube') {
-			window.open('https://www.youtube.com/', '_blank');
+			window.open(
+				'https://www.instagram.com/siratalmustaqeem_academy/?igsh=MWZ5cDQwbWY4aHVkaQ%3D%3D',
+				'_blank'
+			);
 		}
 	};
 	return (
@@ -50,14 +54,14 @@ export const FloatingButtons = () => {
 						<FaInstagram />
 					</span>
 				</li>
-				<li className="icon-container footer-socials youtube">
+				{/* <li className="icon-container footer-socials youtube">
 					<span
 						className="icon youtube"
 						onClick={() => handleRedirect('youtube')}
 					>
 						<FaYoutube />
 					</span>
-				</li>
+				</li> */}
 				<li className="icon-container footer-socials whatsapp">
 					<span
 						className="icon whatsapp"

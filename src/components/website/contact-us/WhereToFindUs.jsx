@@ -36,7 +36,7 @@ const WhereToFindUs = () => {
 				>
 					<MdEmail className="text-5xl" />
 					<h1 className="font-semibold text-2xl mt-5">Our Email</h1>
-					<p>Long Street 454 Los Angles</p>
+					<p>institutealfajr@gmail.com</p>
 				</div>
 				<div
 					data-aos="fade-right"
@@ -45,7 +45,9 @@ const WhereToFindUs = () => {
 				>
 					<FaPhoneSquareAlt className="text-5xl text-[#B2B2B2]" />
 					<h1 className="font-semibold text-2xl mt-5">Our Phone</h1>
-					<p>0333-1100786 ---- 0302-5019924</p>
+					<ul className="list-item">
+						<li>0333-1100786</li> <li>0302-5019924</li>
+					</ul>
 					<p></p>
 				</div>
 			</div>

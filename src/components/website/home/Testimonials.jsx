@@ -52,7 +52,7 @@ const Testimonials = () => {
 				freeMode={true}
 				autoplay={{
 					delay: 5000,
-					disableOnInteraction: false,
+					disableOnInteraction: true,
 					pauseOnMouseEnter: true
 				}}
 				modules={[FreeMode, Autoplay]}

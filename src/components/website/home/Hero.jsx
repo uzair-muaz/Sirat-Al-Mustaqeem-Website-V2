@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
+import { Autoplay, FreeMode } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Hero = () => {
@@ -19,10 +19,7 @@ const Hero = () => {
 		'/website-assets/hero-image-2.jpg',
 		'/website-assets/hero-image-3.jpg',
 		'/website-assets/hero-image-4.jpg',
-		'/website-assets/hero-image-5.jpg',
-		'/website-assets/hero-image-6.jpg',
-		'/website-assets/hero-image-7.jpg',
-		'/website-assets/hero-image-8.jpg'
+		'/website-assets/hero-image-5.jpg'
 	];
 
 	const sliderRef = useRef(null);
@@ -44,41 +41,16 @@ const Hero = () => {
 		<div className="w-full">
 			<Swiper
 				ref={sliderRef}
-				// breakpoints={{
-				//   400: {
-				//     slidesPerView: 1,
-				//     spaceBetween: 15,
-				//   },
-				//   768: {
-				//     slidesPerView: 2,
-				//     spaceBetween: 15,
-				//   },
-				//   1024: {
-				//     slidesPerView: 3,
-				//     spaceBetween: 15,
-				//   },
-				// }}
 				freeMode={true}
-				// pagination={{
-				//   clickable: true,
-				//   el: '.swiper-pagination',
-				// }}
 				autoplay={{
-					delay: 2000,
+					delay: 5000,
 					disableOnInteraction: false
 				}}
 				modules={[FreeMode, Autoplay]}
 			>
 				{ImagesData.map((item, index) => (
 					<SwiperSlide key={`hero-${index}`}>
-						<div
-							className="w-full md:h-[875px] lg:h-screen bg-gradient-to-r from-custom2 to-transparent relative"
-							// style={{
-							// 	background: `url(${item})`,
-							// 	backgroundRepeat: 'no-repeat',
-							// 	backgroundSize: 'cover'
-							// }}
-						>
+						<div className="w-full md:h-[875px] lg:h-screen bg-gradient-to-r from-custom2 to-transparent relative">
 							<Image
 								priority={true}
 								src={item}
@@ -87,6 +59,7 @@ const Hero = () => {
 								layout="fill"
 								objectPosition="center"
 								className="z-0"
+								quality={100}
 							/>
 							<div className="bg-gradient-to-r from-custom2 via-transparent h-full relative z-1">
 								<div className="sm:container sm:mx-auto flex flex-col justify-center px-6 gap-8 text-white h-full pt-20 pb-7">

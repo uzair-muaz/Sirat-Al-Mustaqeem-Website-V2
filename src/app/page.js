@@ -19,7 +19,7 @@ export default function Home() {
 			<Hero />
 			<OurVision />
 			<Testimonials />
-			<WhyUs />
+			{/* <WhyUs /> */}
 			<RecentEvents />
 			<WordsByPrinciple />
 			<div className="bg-gradient-to-b from-[#F9FFDE] to-[#D8E6EB] w-full">

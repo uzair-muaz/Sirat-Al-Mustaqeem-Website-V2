@@ -16,11 +16,16 @@ const WordsByFounder = () => {
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 				<p className="text-custom7 mt-7">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq. sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq. sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq..
+					It gives me immense pleasure to welcome you to our esteemed community
+					of Sirat al Mustaqeem Academy. Our vision revolves around providing an
+					education system to the world that is focused on the holistic
+					development of a child, whilst providing them with tools and skills to
+					be a succes in this world and the next life. We aim to help them
+					become characterful individuals who are connected to their true
+					purpose destined for them by the Creator of the universe. I am hopeful
+					that soon the world will see that a community has risen to the world
+					challenges and are gritty enough to persevere towards its solutions
+					while pleasing their lord.
 				</p>
 			</div>
 		</div>

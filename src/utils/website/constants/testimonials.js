@@ -1,26 +1,26 @@
 export const testimonialsArray = [
 	{
-		parentName: 'Sarah Johnson',
+		parentName: 'Sualeha',
 		description:
-			"Our experience with the school has been incredible. The teachers are dedicated, and the curriculum is enriching for our child. We're grateful for the supportive environment.",
-		videoLink: 'https://www.youtube.com/watch?v=11udE_P_eAU'
-	},
-	{
-		parentName: 'Michael Davis',
-		description:
-			"Choosing this school for our child was the best decision we made. The personalized attention from teachers and the emphasis on holistic development have made a positive impact on our child's growth.",
+			'The mother of Sualeha, one of our FY-3 students, shares her views about the overall experience with Sirat al Mustaqeem preschool and its unique system focused on the holistic development of a child.',
 		videoLink: 'https://www.youtube.com/watch?v=7RxvuHjrTMM'
 	},
 	{
-		parentName: 'Emily Smith',
+		parentName: 'Muhammad Azlaan',
 		description:
-			'The academic programs and extracurricular activities provided by the school have exceeded our expectations. Our child is not only excelling academically but also developing important life skills.',
+			'The mother of our student, Muhammad Azlaan, shares her views about the overall experience with Alfajr preschool and its unique system focused on the holistic development of a child.',
+		videoLink: 'https://www.youtube.com/watch?v=11udE_P_eAU'
+	},
+	{
+		parentName: 'Khoula',
+		description:
+			'The father of Khoula, one of our FY-1 students, shares his views about the overall experience with Sirat al Mustaqeem preschool and its unique system focused on the holistic development of a child.',
 		videoLink: 'https://www.youtube.com/watch?v=5YaGIZ9vRuQ'
 	},
 	{
-		parentName: 'Emily Smith',
+		parentName: 'Syed Hussain',
 		description:
-			'The academic programs and extracurricular activities provided by the school have exceeded our expectations. Our child is not only excelling academically but also developing important life skills.',
+			"Our student, Syed Hussain's father, shares his views about the overall experience with Alfajr preschool and its unique system focused on the holistic development of a child.",
 		videoLink: 'https://www.youtube.com/watch?v=JPLuH2hVL-M'
 	}
 ];

@@ -2,12 +2,20 @@ import React from 'react';
 
 const OurTeam = () => {
 	const facultyArray = [
-		'faculty-1.png',
-		'faculty-2.png',
-		'faculty-3.png',
-		'faculty-4.png',
-		'faculty-5.png',
-		'faculty-6.png'
+		{ image: 'faculty-6.png', name: 'Ayesha Hyat', role: 'Director' },
+		{ image: 'faculty-5.png', name: 'Abubakar Khan', role: 'CEO School' },
+		{
+			image: 'faculty-2.png',
+			name: 'Reham Mujahid',
+			role: 'HR and Homeroom Educator'
+		},
+		{
+			image: 'faculty-3.png',
+			name: 'Afshan Saleem',
+			role: 'Coordinator and English Language Educator'
+		},
+		{ image: 'faculty-1.png', name: 'Shumama Zaidi', role: 'Arabic Educator' },
+		{ image: 'faculty-4.png', name: 'Mahira Hyat', role: 'Counselor' }
 	];
 	return (
 		<div className="sm:container sm:mx-auto px-6  py-16 w-full">
@@ -25,7 +33,7 @@ const OurTeam = () => {
 			</div>
 			<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full mt-20">
 				{facultyArray.map((faculty, index) => (
-					<ImageCard key={faculty} index={index} picture={faculty} />
+					<ImageCard key={faculty} index={index} {...faculty} />
 				))}
 			</div>
 		</div>
@@ -34,7 +42,7 @@ const OurTeam = () => {
 
 export default OurTeam;
 
-function ImageCard({ picture, index }) {
+function ImageCard({ image, name, role, index }) {
 	return (
 		<div
 			data-aos="fade-right"
@@ -48,13 +56,13 @@ function ImageCard({ picture, index }) {
 				className="w-full h-full"
 			/>
 			<img
-				src={`/website-assets/${picture}`}
+				src={`/website-assets/${image}`}
 				alt="faculty"
 				className=" absolute top-0 right-1/2 translate-x-1/2 h-full w-full object-contain"
 			/>
 			<div className="absolute bg-white bg-opacity-55 rounded-b-[30px] flex flex-col items-center bottom-0 w-full py-3">
-				<h1 className="text-custom5 text-3xl font-bold">lorem ipsum</h1>
-				<h2 className="text-custom7 font-medium text-lg">English Teacher</h2>
+				<h1 className="text-custom5 text-3xl font-bold">{name}</h1>
+				<h2 className="text-custom7 font-medium text-lg">{role}</h2>
 			</div>
 		</div>
 	);

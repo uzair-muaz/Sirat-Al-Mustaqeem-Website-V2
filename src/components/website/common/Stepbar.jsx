@@ -15,17 +15,17 @@ const Stepbar = () => {
 					<StepCard
 						index="1"
 						title="Admission"
-						description="  Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+						description="Fill in the admission form and our HR will get in touch with you"
 					/>
 					<StepCard
 						index="2"
 						title="Location"
-						description="  Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+						description="Free Quran Education Centre Rawalpindi"
 					/>
 					<StepCard
 						index="3"
 						title="Book a tour"
-						description="  Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+						description="Contact our HR @ 0333-1100786 and book your tour on any weekday between 9 am to 2 pm."
 					/>
 				</div>
 			</div>

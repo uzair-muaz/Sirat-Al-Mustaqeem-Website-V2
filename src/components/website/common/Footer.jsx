@@ -40,16 +40,18 @@ const Footer = () => {
 						<h4 className="font-semibold ">Contact Us</h4>
 						<ul className="space-y-5">
 							<li className="flex items-center gap-3">
-								<HiMiniEnvelope className="text-2xl" /> hello@skillbridge.com
+								<HiMiniEnvelope className="text-2xl" />{' '}
+								institutealfajr@gmail.com
 							</li>
 							<li className="flex items-center gap-3">
-								<HiPhone className="text-2xl" /> +91 91813 23 2309
+								<HiPhone className="text-2xl" /> 0333-1100786
 							</li>
 							<li className="flex items-center gap-3">
-								<IoLogoWhatsapp className="text-2xl" /> +91 91813 23 2309
+								<IoLogoWhatsapp className="text-2xl" /> 0302-5019924 (HR)
 							</li>
 							<li className="sm:hidden flex items-center gap-3">
-								<HiLocationMarker className="text-2xl" /> Somewhere in the World
+								<HiLocationMarker className="text-2xl" /> Free Quran Education
+								Centre Rawalpindi
 							</li>
 						</ul>
 					</div>
@@ -93,7 +95,8 @@ const Footer = () => {
 					<div className="hidden sm:flex flex-col gap-3  mx-auto w-full md:w-fit">
 						<h4 className="font-semibold ">Where To Find Us</h4>
 						<p className="flex gap-3">
-							<HiLocationMarker className="text-2xl" /> Somewhere in the World
+							<HiLocationMarker className="text-2xl" />
+							Free Quran Education Centre Rawalpindi
 						</p>
 					</div>
 				</div>

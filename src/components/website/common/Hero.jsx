@@ -1,17 +1,28 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 const Hero = ({ title }) => {
 	return (
 		<div className="w-full">
 			<div
 				className="w-full md:h-[530px]  relative"
-				style={{
-					background: `url('/website-assets/hero-image-1.jpg')`,
-					backgroundRepeat: 'no-repeat',
-					backgroundSize: 'cover'
-				}}
+				// style={{
+				// 	background: `url('/website-assets/hero-image-1.jpg')`,
+				// 	backgroundRepeat: 'no-repeat',
+				// 	backgroundSize: 'cover'
+				// }}
 			>
-				<div className="bg-gradient-to-t from-custom2 via-[#00000033] to-[#00000033] h-full">
+				<Image
+					priority={true}
+					src={'/website-assets/hero-image-1.jpg'}
+					alt="hero-image"
+					objectFit="cover"
+					layout="fill"
+					objectPosition="85% 15%"
+					className="z-0"
+				/>
+				<div className="relative bg-gradient-to-t from-custom2 via-[#00000033] to-[#00000033] h-full">
 					<div
 						data-aos="fade-up"
 						className="sm:container sm:mx-auto flex flex-col items-center justify-center px-6 gap-8 text-white h-full pt-20 pb-7"

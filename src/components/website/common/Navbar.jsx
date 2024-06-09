@@ -35,7 +35,7 @@ const Navbar = () => {
 	}, []);
 	return (
 		<header
-			className={`fixed w-full transition-all duration-[700ms] z-50 ${
+			className={`fixed w-full transition-all duration-[700ms] z-10 ${
 				scrolling
 					? 'bg-custom9 bg-opacity-[0.3] backdrop-blur-sm'
 					: 'bg-white bg-opacity-[0.3] lg:bg-opacity-[1] lg:bg-transparent'

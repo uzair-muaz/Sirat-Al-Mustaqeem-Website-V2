@@ -13,14 +13,12 @@ const WhatMakesUsUnique = () => {
 					Our offerings
 				</h3>
 				<h1 className="text-custom2 text-4xl sm:text-5xl font-bold mt-3">
-					What makes us unique?
+					Personality Shaping Years (Grade 1 to 3)
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 				<p className="text-custom7 mt-7">
-					Our Preschool will provide various opportunities for students to
-					develop the desired characteristics along with an environment that
-					helps them self-express and be their true selves. Here are the key
-					offerings that make our preschool a unique learning environment:
+					We have recently added a holistic development program for learners
+					aged 6 to 10 based on natural learning.
 				</p>
 			</div>
 		</div>
