@@ -2,6 +2,8 @@
 
 import { useCallback, useRef } from 'react';
 
+import Image from 'next/image';
+
 import { BsArrowLeft } from 'react-icons/bs';
 import { BsArrowRight } from 'react-icons/bs';
 import 'swiper/css';
@@ -15,7 +17,12 @@ const Hero = () => {
 	const ImagesData = [
 		'/website-assets/hero-image-1.jpg',
 		'/website-assets/hero-image-2.jpg',
-		'/website-assets/hero-image-3.jpg'
+		'/website-assets/hero-image-3.jpg',
+		'/website-assets/hero-image-4.jpg',
+		'/website-assets/hero-image-5.jpg',
+		'/website-assets/hero-image-6.jpg',
+		'/website-assets/hero-image-7.jpg',
+		'/website-assets/hero-image-8.jpg'
 	];
 
 	const sliderRef = useRef(null);
@@ -66,13 +73,22 @@ const Hero = () => {
 					<SwiperSlide key={`hero-${index}`}>
 						<div
 							className="w-full md:h-[875px] lg:h-screen bg-gradient-to-r from-custom2 to-transparent relative"
-							style={{
-								background: `url(${item})`,
-								backgroundRepeat: 'no-repeat',
-								backgroundSize: 'cover'
-							}}
+							// style={{
+							// 	background: `url(${item})`,
+							// 	backgroundRepeat: 'no-repeat',
+							// 	backgroundSize: 'cover'
+							// }}
 						>
-							<div className="bg-gradient-to-r from-custom2 via-transparent h-full">
+							<Image
+								priority={true}
+								src={item}
+								alt="hero-image"
+								objectFit="cover"
+								layout="fill"
+								objectPosition="center"
+								className="z-0"
+							/>
+							<div className="bg-gradient-to-r from-custom2 via-transparent h-full relative z-1">
 								<div className="sm:container sm:mx-auto flex flex-col justify-center px-6 gap-8 text-white h-full pt-20 pb-7">
 									<h1
 										data-aos="fade-down"
