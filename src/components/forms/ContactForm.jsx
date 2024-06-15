@@ -1,14 +1,37 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, message } from 'antd';
+import axios from 'axios';
 
 const { Item } = Form;
 
 const ContactForm = () => {
-	const onFinish = values => {
-		console.log('Received values:', values);
+	const [form] = Form.useForm();
+	const [isLoading, setIsLoading] = useState(false);
+	const onFinish = async values => {
+		setIsLoading(true);
+		try {
+			const response = await axios.post('/api/send-email/contact', {
+				...values
+			});
+
+			const data = response.data;
+
+			if (data && data.id) {
+				form.resetFields();
+				message.success(
+					`Thank you for your interest! We will get back to you soon!`
+				);
+			} else {
+				message.error('Apologies! Please try again.');
+			}
+		} catch (error) {
+			message.error('Ooops! unfortunately some error has occurred.');
+		} finally {
+			setIsLoading(false);
+		}
 	};
 
 	return (
@@ -130,13 +153,14 @@ const ContactForm = () => {
 			</div>
 
 			<Item>
-				<button
-					className="contained-submit-button w-full mt-3"
+				<Button
 					type="primary"
-					// htmlType="submit"
+					loading={isLoading}
+					htmlType="submit"
+					className="contained-submit-button w-full mt-3"
 				>
 					Submit
-				</button>
+				</Button>
 			</Item>
 		</Form>
 	);

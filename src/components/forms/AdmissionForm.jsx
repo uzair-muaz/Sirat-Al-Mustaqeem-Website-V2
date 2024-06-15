@@ -1,17 +1,42 @@
 'use client';
 
-import { Form, Input, Select } from 'antd';
+import { useState } from 'react';
+
+import { Button, Form, Input, Select, message } from 'antd';
+import axios from 'axios';
 
 const { Item } = Form;
 const { Option } = Select;
 
 const AdmissionForm = () => {
-	const onFinish = values => {
-		console.log('Received values:', values);
+	const [form] = Form.useForm();
+	const [isLoading, setIsLoading] = useState(false);
+	const onFinish = async values => {
+		setIsLoading(true);
+		try {
+			const response = await axios.post('/api/send-email/admission', {
+				...values
+			});
+
+			const data = response.data;
+
+			if (data && data.id) {
+				message.success(
+					`Thank you for your interest! We will get back to you soon!`
+				);
+				form.resetFields();
+			} else {
+				message.error('Apologies! Please try again.');
+			}
+		} catch (error) {
+			message.error('Ooops! unfortunately some error has occurred.');
+		} finally {
+			setIsLoading(false);
+		}
 	};
 
 	return (
-		<Form onFinish={onFinish} className="space-y-3 w-full">
+		<Form form={form} onFinish={onFinish} className="space-y-3 w-full">
 			<div className="grid md:grid-cols-2 gap-3 md:gap-10">
 				<div className="space-y-1">
 					<p className="text-custom8">Student Name</p>
@@ -148,13 +173,14 @@ const AdmissionForm = () => {
 			</div>
 
 			<Item>
-				<button
+				<Button
+					loading={isLoading}
 					className="contained-submit-button w-full mt-3"
 					type="primary"
-					// htmlType="submit"
+					htmlType="submit"
 				>
 					Submit
-				</button>
+				</Button>
 			</Item>
 		</Form>
 	);

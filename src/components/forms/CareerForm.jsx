@@ -1,32 +1,77 @@
 'use client';
 
-import { Button, Form, Input, Select, Upload } from 'antd';
+import { useState } from 'react';
+
+import { Button, Form, Input, Upload, message } from 'antd';
+import axios from 'axios';
 import { GrCloudUpload } from 'react-icons/gr';
 
 const { Item } = Form;
-const { Option } = Select;
 
 const CareerForm = () => {
-	const onFinish = values => {
-		console.log('Received values:', values);
-	};
+	const [form] = Form.useForm();
+	const [resume, setResume] = useState(null);
+	const [isLoading, setIsLoading] = useState(false);
 
-	const uploadProps = {
-		multiple: false,
-		maxCount: 1,
-		accept: '.pdf',
-		beforeUpload: file => {
-			// You can add file validation logic here
-			const isPDF = file.type === 'application/pdf';
-			if (!isPDF) {
-				alert('You can only upload PDF files!');
+	const onFinish = async values => {
+		setIsLoading(true);
+		try {
+			const formData = new FormData();
+			formData.set('fileToUpload', resume);
+
+			// Upload file to Cloudinary
+			const uploadResponse = await axios.post('/api/upload-file', formData);
+
+			// Send email with career application details and resume URL
+			const emailResponse = await axios.post('/api/send-email/career', {
+				...values,
+				resume: uploadResponse.data.fileURL
+			});
+
+			if (emailResponse) {
+				form.resetFields();
+				message.success(
+					`Thank you for your interest! We will get back to you soon!`
+				);
+			} else {
+				message.error('Apologies! Please try again.');
 			}
-			return isPDF || Upload.LIST_IGNORE;
+		} catch (error) {
+			message.error('Ooops! Unfortunately, some error has occurred.');
+		} finally {
+			setIsLoading(false);
 		}
 	};
 
+	const beforeUpload = file => {
+		const isPDF = file.type === 'application/pdf';
+		if (!isPDF) {
+			return false;
+		}
+		setResume(file);
+		return isPDF || Upload.LIST_IGNORE;
+	};
+
+	// const uploadProps = {
+	// 	multiple: false,
+	// 	maxCount: 1,
+	// 	accept: '.pdf',
+	// 	beforeUpload: file => {
+	// 		const isPDF = file.type === 'application/pdf';
+	// 		if (!isPDF) {
+	// 			alert('You can only upload PDF files!');
+	// 		}
+	// 		return isPDF || Upload.LIST_IGNORE;
+	// 	}
+	// };
+
 	return (
-		<Form onFinish={onFinish} className="space-y-3 w-full" size="large">
+		<Form
+			form={form}
+			onFinish={onFinish}
+			className="space-y-3 w-full"
+			size="large"
+		>
 			<div className="grid md:grid-cols-2 gap-10">
 				<div className="space-y-1">
 					<p className="text-custom8">First Name</p>
@@ -149,7 +194,13 @@ const CareerForm = () => {
 						}
 					]}
 				>
-					<Upload {...uploadProps}>
+					<Upload
+						accept=".pdf"
+						beforeUpload={beforeUpload}
+						multiple={false}
+						maxCount={1}
+						// onChange={handleFileChange}
+					>
 						<div
 							style={{ border: '1.5px dashed #13824B' }}
 							className="flex flex-col gap-2 items-center justify-center bg-[#FAFFD7] h-[120px] rounded-lg px-4 text-center"
@@ -165,9 +216,14 @@ const CareerForm = () => {
 			</div>
 
 			<Item>
-				<button className="contained-submit-button w-full mt-3" type="primary">
+				<Button
+					type="primary"
+					loading={isLoading}
+					htmlType="submit"
+					className="contained-submit-button w-full mt-3"
+				>
 					Submit
-				</button>
+				</Button>
 			</Item>
 		</Form>
 	);
