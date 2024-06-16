@@ -3,15 +3,18 @@ import React from 'react';
 const WordsByPrinciple = () => {
 	return (
 		<div className="sm:container sm:mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
-			<div data-aos="fade-right" className="flex justify-center items-start ">
+			<div data-aos="fade-right" className="flex justify-center items-start">
 				<img
-					src="/website-assets/principal.svg"
+					src="/website-assets/director.svg"
 					alt="vision-image"
 					className="rounded-full lg:max-w-[500px] object-contain"
 				/>
 			</div>
 
-			<div data-aos="fade-left" className="flex flex-col justify-center mt-10">
+			<div
+				data-aos="fade-left"
+				className="flex flex-col justify-center md:mt-10"
+			>
 				<h3 className="text-custom3 text-lg sm:text-xl font-medium">
 					Principal
 				</h3>
@@ -47,7 +50,7 @@ const WordsByPrinciple = () => {
 					</p>
 				</div>
 			</div>
-			<div data-aos="fade-left" className="col-span-2 space-y-6 -mt-5">
+			<div data-aos="fade-left" className="md:col-span-2 space-y-6 -mt-5">
 				<p>
 					Our mission is to impart the timeless Islamic principles and teachings
 					in a captivating and age-appropriate manner, encompassing the study of

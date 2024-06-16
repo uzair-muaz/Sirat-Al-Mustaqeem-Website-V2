@@ -20,7 +20,7 @@ const CampusAndLocation = () => {
 			>
 				<div className="w-[90%] max-w-[925px] h-[425px] p-5 absolute left-6 sm:left-0 top-20 border border-custom6 rounded-2xl">
 					<img
-						src="/website-assets/map.png"
+						src="/website-assets/map-2.png"
 						alt="map"
 						className="w-full h-full rounded-2xl"
 					/>

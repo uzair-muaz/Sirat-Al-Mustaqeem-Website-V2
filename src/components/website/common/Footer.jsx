@@ -44,7 +44,7 @@ const Footer = () => {
 								institutealfajr@gmail.com
 							</li>
 							<li className="flex items-center gap-3">
-								<HiPhone className="text-2xl" /> 0333-1100786
+								<HiPhone className="text-2xl" /> 0333-1100786 (School Head)
 							</li>
 							<li className="flex items-center gap-3">
 								<IoLogoWhatsapp className="text-2xl" /> 0302-5019924 (HR)

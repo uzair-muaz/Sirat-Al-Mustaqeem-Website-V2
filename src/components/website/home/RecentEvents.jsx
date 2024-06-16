@@ -24,7 +24,7 @@ const RecentEvents = () => {
 
 	const itemsPerPage = {
 		sm: 1,
-		md: 2,
+		md: 1,
 		lg: 3
 	};
 
@@ -95,14 +95,16 @@ const RecentEvents = () => {
 							/>
 						))}
 				</div>
-				<div className="flex justify-center gap-4 mt-10">
-					<button className={buttonStyle} onClick={handlePrev}>
-						<PiCaretLeftBold />
-					</button>
-					<button className={buttonStyle} onClick={handleNext}>
-						<PiCaretRightBold />
-					</button>
-				</div>
+				{eventsArray.legth > 3 && (
+					<div className={`hidden lg:flex justify-center gap-4 mt-10`}>
+						<button className={buttonStyle} onClick={handlePrev}>
+							<PiCaretLeftBold />
+						</button>
+						<button className={buttonStyle} onClick={handleNext}>
+							<PiCaretRightBold />
+						</button>
+					</div>
+				)}
 			</div>
 
 			<Modal

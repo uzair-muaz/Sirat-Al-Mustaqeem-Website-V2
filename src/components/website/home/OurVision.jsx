@@ -10,11 +10,12 @@ const OurVision = () => {
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 				<p className="text-custom7 mt-7">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq. sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq. sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliq..
+					Our vision is to develop children who think the right way, act the
+					right way and live life the right way. Our goal as a school is to
+					equip our coming generations with the best education, skillset, and
+					mindset to succeed in both the duniya and akhirah. These individuals
+					will become the front runners in the fields of their interests and
+					will be at the forefront of a revolution towards goodness.
 				</p>
 			</div>
 			<div data-aos="fade-up" className="flex justify-center items-center">

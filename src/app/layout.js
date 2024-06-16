@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<AOSInit />
+
 			<body className={inter.className}>
 				<Navbar />
 				<div className="relative">

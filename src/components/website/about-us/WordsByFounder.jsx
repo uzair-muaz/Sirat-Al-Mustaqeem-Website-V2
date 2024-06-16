@@ -3,7 +3,7 @@ const WordsByFounder = () => {
 		<div className="sm:container sm:mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
 			<div data-aos="fade-right" className="flex justify-center items-center ">
 				<img
-					src="/website-assets/principal.svg"
+					src="/website-assets/founder.svg"
 					alt="vision-image"
 					className="rounded-full lg:max-w-[500px] object-contain"
 				/>

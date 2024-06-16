@@ -60,7 +60,7 @@ function ImageCard({ image, name, role, index }) {
 				alt="faculty"
 				className=" absolute top-0 right-1/2 translate-x-1/2 h-full w-full object-contain"
 			/>
-			<div className="absolute bg-white bg-opacity-55 rounded-b-[30px] flex flex-col items-center bottom-0 w-full py-3">
+			<div className="absolute bg-white bg-opacity-55 rounded-b-[30px] flex flex-col items-center bottom-0 w-full p-3 text-center">
 				<h1 className="text-custom5 text-3xl font-bold">{name}</h1>
 				<h2 className="text-custom7 font-medium text-lg">{role}</h2>
 			</div>

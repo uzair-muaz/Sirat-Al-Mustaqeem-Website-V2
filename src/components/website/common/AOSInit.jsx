@@ -8,6 +8,10 @@ import 'aos/dist/aos.css';
 export const AOSInit = () => {
 	useEffect(() => {
 		AOS.init({
+			disable: function () {
+				var maxWidth = 1024;
+				return window.innerWidth < maxWidth;
+			},
 			easing: 'ease-out-quad',
 			duration: 2000,
 			once: true

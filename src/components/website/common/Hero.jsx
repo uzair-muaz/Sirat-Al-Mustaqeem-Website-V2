@@ -6,7 +6,7 @@ const Hero = ({ title }) => {
 	return (
 		<div className="w-full">
 			<div
-				className="w-full md:h-[530px]  relative"
+				className="w-full h-[300px] md:h-[530px]  relative"
 				// style={{
 				// 	background: `url('/website-assets/hero-image-1.jpg')`,
 				// 	backgroundRepeat: 'no-repeat',
