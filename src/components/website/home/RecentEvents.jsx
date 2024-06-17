@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+import Image from 'next/image';
+
 import { Modal } from 'antd';
 import { BsArrowLeft } from 'react-icons/bs';
 import { BsArrowRight } from 'react-icons/bs';
@@ -73,6 +75,14 @@ const RecentEvents = () => {
 	const buttonStyle =
 		'text-[#fbbf11] text-lg rounded-full p-2 cursor-pointer border border-[#fbbf11] hover:text-black hover:bg-[#fbbf11] transition-all duration-700';
 
+	console.log(
+		'eventsArray.length.toString() > getScreenSize().toString()',
+		eventsArray.length.toString() > getScreenSize().toString(),
+
+		eventsArray.length.toString(),
+		getScreenSize().toString()
+	);
+
 	return (
 		<div data-aos="fade-right" className="py-10 w-full">
 			<div className="sm:container sm:mx-auto px-6 flex flex-col justify-center items-center">
@@ -84,7 +94,7 @@ const RecentEvents = () => {
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-16 gap-10">
+				<div className="grid md:grid-cols-1 lg:grid-cols-3 mt-10 md:mt-16 gap-10">
 					{eventsArray
 						.slice(currentIndex, currentIndex + itemsPerPage[getScreenSize()])
 						.map(event => (
@@ -95,8 +105,8 @@ const RecentEvents = () => {
 							/>
 						))}
 				</div>
-				{eventsArray.legth > 3 && (
-					<div className={`hidden lg:flex justify-center gap-4 mt-10`}>
+				{eventsArray.length > itemsPerPage[getScreenSize()] && (
+					<div className={`flex justify-center gap-4 mt-10`}>
 						<button className={buttonStyle} onClick={handlePrev}>
 							<PiCaretLeftBold />
 						</button>
@@ -197,21 +207,22 @@ function EventCard({
 }) {
 	return (
 		<div
-			className="relative-container"
+			className="relative-container rounded-3xl"
+			style={{
+				backgroundImage: `url(${thumbnailImage})`,
+				backgroundSize: 'cover', // ensures the background covers the entire container
+				backgroundPosition: 'center', // centers the background image
+				backgroundRepeat: 'no-repeat' // prevents the background image from repeating
+			}}
 			onClick={() => {
 				handleOpenModal(modalImages);
 			}}
 		>
-			<img
-				src={thumbnailImage}
-				alt={`event-${title}`}
-				className="w-full object-cover h-full rounded-3xl"
-			/>
-			<div className="green-overlay p-10 text-white">
-				<h2 className=" text-xl sm:text-xl font-bold">{title}</h2>
+			<div className=" p-10 text-white lg:opacity-0 hover:opacity-100 bg-[#53885ebf]  lg:bg-transparent hover:bg-[#489157bf] z-10 relative h-full rounded-3xl">
+				<h2 className=" text-xl sm:text-xl font-bold ">{title}</h2>
 				<p className=" text-sm mt-2">{description}</p>
 				<p className="text-sm mt-2 text-custom6">
-					Click on the image to see more photos
+					Click on the card to see more images
 				</p>
 			</div>
 		</div>
