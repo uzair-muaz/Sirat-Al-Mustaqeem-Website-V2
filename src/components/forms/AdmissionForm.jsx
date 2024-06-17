@@ -36,8 +36,13 @@ const AdmissionForm = () => {
 	};
 
 	return (
-		<Form form={form} onFinish={onFinish} className="space-y-3 w-full">
-			<div className="grid md:grid-cols-2 gap-3 md:gap-10">
+		<Form
+			form={form}
+			onFinish={onFinish}
+			size="large"
+			className="space-y-3 w-full"
+		>
+			<div className="grid md:grid-cols-2 gap-3 md:gap-5">
 				<div className="space-y-1">
 					<p className="text-custom8">Student Name</p>
 					<Item
@@ -69,7 +74,7 @@ const AdmissionForm = () => {
 				</div>
 			</div>
 
-			<div className="grid md:grid-cols-2 gap-3 md:gap-10">
+			<div className="grid md:grid-cols-2 gap-3 md:gap-5">
 				<div className="space-y-1">
 					<p className="text-custom8">Age</p>
 					<Item

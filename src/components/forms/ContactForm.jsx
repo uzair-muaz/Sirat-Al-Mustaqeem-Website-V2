@@ -39,10 +39,12 @@ const ContactForm = () => {
 			//   initialValues={{
 			//     remember: true,
 			//   }}
+			form={form}
 			onFinish={onFinish}
+			size="large"
 			className="space-y-3 w-full mt-9"
 		>
-			<div className="grid md:grid-cols-2 gap-10">
+			<div className="grid md:grid-cols-2 gap-5">
 				<div className="space-y-1">
 					<p className="text-custom8">First Name</p>
 					<Item
