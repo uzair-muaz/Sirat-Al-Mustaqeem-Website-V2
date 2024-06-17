@@ -220,7 +220,7 @@ const CareerForm = () => {
 					type="primary"
 					loading={isLoading}
 					htmlType="submit"
-					className="contained-submit-button w-full mt-3"
+					className="w-full mt-3"
 				>
 					Submit
 				</Button>

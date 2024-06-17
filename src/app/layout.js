@@ -1,9 +1,8 @@
 import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 
-import { ConfigProvider } from 'antd';
-
 import { AOSInit } from '@/components/website/common/AOSInit';
+import AntdProvider from '@/components/website/common/AntdProvider';
 import { FloatingButtons } from '@/components/website/common/FloatingButtons';
 
 import './globals.css';
@@ -21,12 +20,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-	const theme = {
-		token: {
-			colorPrimary: '#69AA8A'
-		}
-	};
-
 	return (
 		<html lang="en">
 			<AOSInit />
@@ -35,7 +28,7 @@ export default function RootLayout({ children }) {
 				<Navbar />
 				<div className="relative">
 					<FloatingButtons />
-					<ConfigProvider theme={theme}>{children}</ConfigProvider>
+					<AntdProvider>{children}</AntdProvider>
 				</div>
 			</body>
 		</html>
