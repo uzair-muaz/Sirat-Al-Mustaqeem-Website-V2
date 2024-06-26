@@ -8,22 +8,22 @@ const WorkWithUs = () => {
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
 				<p className="text-custom7 mt-7">
-					At Sirat al Mustaqeem, we love to onboard individuals who are
-					passionate about education and have a knack to challenge the
-					traditional and conventional systems. Individuals who are committed
-					and persistent to find solutions to big problems in society and
-					education and hence make a noteworthy difference. We seek individuals
-					who are innovative in their approach, ready to learn and implement new
-					methodologies, and having a heart that has love and care for the young
-					learners. If you consider yourself such a creative individual, then
-					you are at the right place. Avail this opportunity to team up with the
-					change makers by filling out the application form.
+					At Sirat al Mustaqeem, we like hiring people who are passionate about
+					education and have a knack for challenging traditional systems.
+					Individuals who are dedicated and persistent in their efforts to solve
+					major societal problems, particularly those involving education. We
+					seek individuals who are innovative in their approach, eager to learn
+					and implement new methodologies, and have a heart filled with
+					compassion and affection for young learners. If you identify as one of
+					these individuals, you've landed in the right place. Fill out the
+					application form to take advantage of the opportunity to collaborate
+					with changemakers.
 				</p>
-				<p className="mt-2">
+				{/* <p className="mt-2">
 					We believe in giving financial freedom to our educators so that they
 					can focus on the development of the children. Easing our educators is
 					our prime focus and we believe in doing that in best possible ways.
-				</p>
+				</p> */}
 			</div>
 			<div data-aos="fade-left" className="flex justify-center items-center">
 				<img

@@ -3,6 +3,7 @@
 import { useCallback, useRef } from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { BsArrowLeft } from 'react-icons/bs';
 import { BsArrowRight } from 'react-icons/bs';
@@ -69,15 +70,16 @@ const Hero = () => {
 									>
 										Welcome to <br /> sirat al <br /> mustaqeem
 									</h1>
-									<p data-aos="fade-down">
-										We offer the best education experience in the triad.
-									</p>
-									<button
-										data-aos="fade-up"
-										className="capitalize border border-custom6 rounded-lg w-fit h-10 px-4"
-									>
-										learn more
-									</button>
+									<p data-aos="fade-down">A Dream Learning Space.</p>
+									<Link href={'/about-us'} legacyBehavior>
+										<button
+											data-aos="fade-up"
+											className="capitalize border border-custom6 rounded-lg w-fit h-10 px-4"
+										>
+											learn more
+										</button>
+									</Link>
+
 									<div data-aos="fade-up" className="flex gap-4">
 										<button className={buttonStyle} onClick={handlePrev}>
 											<BsArrowLeft />

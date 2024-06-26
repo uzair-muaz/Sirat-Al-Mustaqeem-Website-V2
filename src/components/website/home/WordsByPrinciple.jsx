@@ -1,6 +1,9 @@
-import React from 'react';
+'use client';
+
+import { useState } from 'react';
 
 const WordsByPrinciple = () => {
+	const [isHovering, setIsHovering] = useState(false);
 	return (
 		<div className="sm:container sm:mx-auto px-6 py-10 grid md:grid-cols-2 gap-10">
 			<div data-aos="fade-right" className="flex justify-center items-start">
@@ -22,7 +25,15 @@ const WordsByPrinciple = () => {
 					Words by the Director
 				</h1>
 				<div className="border border-custom6 w-full max-w-[280px] mt-3" />
-				<div className="space-y-5">
+				<div
+					className="space-y-5"
+					onMouseEnter={() => {
+						setIsHovering(true);
+					}}
+					// onMouseLeave={() => {
+					// 	setIsHovering(false);
+					// }}
+				>
 					<p className="text-custom7 mt-7 text-justify">
 						Dear Esteemed Community,
 					</p>
@@ -30,8 +41,7 @@ const WordsByPrinciple = () => {
 						Welcome to SIRAT-AL-MUSTAQEEM, An Academy of Excellence, the
 						pinnacle of educational distinction! We are thrilled to introduce a
 						new era of learning, where academic rigor, innovation, and
-						creativity converge to shape the minds of tomorrow's visionaries is
-						a going to be a standard.
+						creativity converge to shape the minds of tomorrow's visionaries.
 					</p>
 					<p>
 						Our state-of-the-art campus and cutting-edge curriculum are designed
@@ -50,15 +60,19 @@ const WordsByPrinciple = () => {
 					</p>
 				</div>
 			</div>
-			<div data-aos="fade-left" className="md:col-span-2 space-y-6 -mt-5">
+			<div
+				data-aos="fade-top"
+				data-aos-duration="700"
+				className={`${isHovering ? 'block' : 'hidden'} md:col-span-2 space-y-6 -mt-5`}
+			>
 				<p>
 					Our mission is to impart the timeless Islamic principles and teachings
 					in a captivating and age-appropriate manner, encompassing the study of
 					Quranic Arabic (Fusah), thereby empowering students to master the
 					language from its very foundations, and speak Arabic with confidence
 					and eloquence, from the simplest phrases to the most complex
-					expressions ,as well as the life narratives of the Prophet Muhammad
-					(peace be upon him), and other revered prophets. We aim to nurture
+					expressions as well as the life narratives of the Prophet Muhammad
+					(peace be upon him) and other revered prophets. We aim to nurture
 					essential Islamic values such as benevolence, integrity, compassion,
 					and reverence, fostering the development of positive character traits
 					and moral excellence. This foundation will empower students to
@@ -81,7 +95,7 @@ const WordsByPrinciple = () => {
 					curiosity, sparks creativity, and inspires our students to reach their
 					full potential. As we navigate the challenges and opportunities ahead,
 					I am confident that our collective efforts will yield a harvest of
-					excellence, empathy, and wisdom.May our school remain a beacon of
+					excellence, empathy, and wisdom. May our school remain a beacon of
 					hope, a sanctuary of knowledge, and a vibrant community of learners,
 					where every student feels seen, heard, and valued. Thank you for your
 					dedication, passion, and commitment to our school's mission.

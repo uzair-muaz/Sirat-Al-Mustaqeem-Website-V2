@@ -207,7 +207,7 @@ function EventCard({
 }) {
 	return (
 		<div
-			className="relative-container rounded-3xl"
+			className="relative-container rounded-3xl border"
 			style={{
 				backgroundImage: `url(${thumbnailImage})`,
 				backgroundSize: 'cover', // ensures the background covers the entire container

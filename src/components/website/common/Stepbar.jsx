@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Link from 'next/link';
+
 import StepCard from './StepCard';
 
 const Stepbar = () => {
@@ -17,6 +19,7 @@ const Stepbar = () => {
 						title="Admission"
 						description="Fill in the admission form and our HR will get in touch with you"
 					/>
+
 					<StepCard
 						index="2"
 						title="Location"
