@@ -25,7 +25,7 @@ const PreSchool = () => {
 			</div>
 			<div data-aos="fade-left" className="flex justify-center items-center">
 				<img
-					src="/website-assets/pre-school.png"
+					src="/website-assets/pre-school-new.png"
 					alt="pre-school-image"
 					className="w-full max-w-[500px]"
 				/>

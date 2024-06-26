@@ -35,7 +35,7 @@ export const CareerEmailTemplate = ({
 						<Img
 							style={logo}
 							src={
-								'https://scontent.fisb13-1.fna.fbcdn.net/v/t39.30808-6/369848169_141486555676316_4967025280396855132_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Y3TiwNATYzQQ7kNvgGtN9rF&_nc_ht=scontent.fisb13-1.fna&oh=00_AYBKExYblJYI1vD1MRSEdKSdM1D2xl4xY2-kC72voS2Xfg&oe=666E92D7'
+								'https://res.cloudinary.com/djgd5ntwd/image/upload/v1718608692/email-header.jpg'
 							}
 						/>
 					</Section>
