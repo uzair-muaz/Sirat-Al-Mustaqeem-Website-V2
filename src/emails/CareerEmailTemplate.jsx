@@ -35,7 +35,7 @@ export const CareerEmailTemplate = ({
 						<Img
 							style={logo}
 							src={
-								'https://res.cloudinary.com/djgd5ntwd/image/upload/v1718608692/email-header.jpg'
+								'https://res.cloudinary.com/ddou9lqzj/image/upload/v1719413411/email-header_qdiha2.jpg'
 							}
 						/>
 					</Section>

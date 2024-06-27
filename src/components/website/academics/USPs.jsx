@@ -5,7 +5,7 @@ const uspsArray = [
 		icon: '/website-assets/pre-school-1.svg',
 		title: 'Promoting Social & Emotional Development',
 		description:
-			'Al-Fajr Preschool, we aim to provide a safe and nurturing environment that fosters social and emotional growth. Children learn to communicate, collaborate, and regulate their emotions through play and other activities. The goal is to groom children so that they are able to regulate their emotions under different circumstances and are socially conscious and active.'
+			'Sirat-Al-Mustaqeem Preschool, we aim to provide a safe and nurturing environment that fosters social and emotional growth. Children learn to communicate, collaborate, and regulate their emotions through play and other activities. The goal is to groom children so that they are able to regulate their emotions under different circumstances and are socially conscious and active.'
 	},
 	{
 		icon: '/website-assets/pre-school-2.svg',

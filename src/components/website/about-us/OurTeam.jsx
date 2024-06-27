@@ -23,9 +23,9 @@ const OurTeam = () => {
 				data-aos="fade-down"
 				className="flex flex-col justify-center items-center"
 			>
-				<h3 className="text-custom4 text-lg sm:text-xl font-medium">
+				{/* <h3 className="text-custom4 text-lg sm:text-xl font-medium">
 					Teachers
-				</h3>
+				</h3> */}
 				<h1 className="text-custom2 text-4xl sm:text-5xl font-bold mt-3 text-center">
 					Our Team
 				</h1>

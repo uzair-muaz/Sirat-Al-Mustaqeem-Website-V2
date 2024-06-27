@@ -1,6 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 
-import { FaInstagram } from 'react-icons/fa6';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa6';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaYoutube } from 'react-icons/fa6';
 import { HiLocationMarker } from 'react-icons/hi';
@@ -11,6 +13,24 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { navLinks } from '@/utils/website/constants';
 
 const Footer = () => {
+	const handleRedirect = value => {
+		if (value === 'whatsapp') {
+			window.open(`https://wa.me/${'923331100786'}`, '_blank');
+		} else if (value === 'facebook') {
+			window.open(
+				' https://www.facebook.com/SiratalMustaqeemAcademy?mibextid=ZbWKwL',
+				'_blank'
+			);
+		} else if (value === 'instagram') {
+			window.open(
+				'https://www.instagram.com/siratalmustaqeem_academy/?igsh=MWZ5cDQwbWY4aHVkaQ%3D%3D',
+				'_blank'
+			);
+		} else if (value === 'youtube') {
+			window.open('https://www.youtube.com/@SiratAlMustaqeemAcademy', '_blank');
+		}
+	};
+
 	return (
 		<footer>
 			<div className="bg-[#1C2B26] rounded-t-3xl text-white relative min-h-[433px] flex flex-col gap-5">
@@ -72,19 +92,37 @@ const Footer = () => {
 					<div className="flex flex-col gap-3  mx-auto w-full md:w-fit">
 						<h4 className="font-semibold">Connect</h4>
 						<ul className="space-y-2">
-							<li className="flex items-center gap-3 footer-socials hover:text-custom3 cursor-pointer">
+							<li
+								onClick={() => handleRedirect('facebook')}
+								className="flex items-center gap-3 footer-socials hover:text-custom3 cursor-pointer"
+							>
 								<span className="text-md p-2 rounded-full border animate-icon hover:border-custom3 ">
 									<FaFacebookF />
 								</span>{' '}
 								Facebook
 							</li>
-							<li className="flex items-center gap-3 footer-socials hover:text-custom3 cursor-pointer">
+							<li
+								onClick={() => handleRedirect('instagram')}
+								className="flex items-center gap-3 footer-socials hover:text-custom3 cursor-pointer"
+							>
 								<span className="text-md p-2 rounded-full border animate-icon hover:border-custom3 ">
 									<FaInstagram />
 								</span>{' '}
 								Instagram
 							</li>
-							<li className="flex items-center gap-3 footer-socials hover:text-custom3 cursor-pointer">
+							<li
+								onClick={() => handleRedirect('whatsapp')}
+								className="flex items-center gap-3 footer-socials hover:text-custom3 cursor-pointer"
+							>
+								<span className="text-md p-2 rounded-full border animate-icon hover:border-custom3 ">
+									<FaWhatsapp />
+								</span>{' '}
+								Whatsapp
+							</li>
+							<li
+								onClick={() => handleRedirect('youtube')}
+								className="flex items-center gap-3 footer-socials hover:text-custom3 cursor-pointer"
+							>
 								<span className="text-md p-2 rounded-full border animate-icon hover:border-custom3 ">
 									<FaYoutube />
 								</span>{' '}

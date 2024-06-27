@@ -6,7 +6,7 @@ const Hero = ({ title }) => {
 	return (
 		<div className="w-full">
 			<div
-				className="w-full h-[300px] md:h-[530px]  relative"
+				className="w-full h-[300px] md:h-[530px] lg:[700px]  relative"
 				// style={{
 				// 	background: `url('/website-assets/hero-image-1.jpg')`,
 				// 	backgroundRepeat: 'no-repeat',
@@ -15,7 +15,7 @@ const Hero = ({ title }) => {
 			>
 				<Image
 					priority={true}
-					src={'/website-assets/hero-image-1.jpg'}
+					src={'/website-assets/hero-image-4.jpg'}
 					alt="hero-image"
 					objectFit="cover"
 					layout="fill"

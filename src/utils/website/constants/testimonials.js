@@ -8,7 +8,7 @@ export const testimonialsArray = [
 	{
 		parentName: 'Muhammad Azlaan',
 		description:
-			'The mother of our student, Muhammad Azlaan, shares her views about the overall experience with Alfajr preschool and its unique system focused on the holistic development of a child.',
+			'The mother of our student, Muhammad Azlaan, shares her views about the overall experience with Sirat al Mustaqeem preschool and its unique system focused on the holistic development of a child.',
 		videoLink: 'https://www.youtube.com/watch?v=11udE_P_eAU'
 	},
 	{
@@ -20,7 +20,7 @@ export const testimonialsArray = [
 	{
 		parentName: 'Syed Hussain',
 		description:
-			"Our student, Syed Hussain's father, shares his views about the overall experience with Alfajr preschool and its unique system focused on the holistic development of a child.",
+			"Our student, Syed Hussain's father, shares his views about the overall experience with Sirat al Mustaqeem preschool and its unique system focused on the holistic development of a child.",
 		videoLink: 'https://www.youtube.com/watch?v=JPLuH2hVL-M'
 	}
 ];
